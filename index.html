@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>For Motu 💖</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Custom cursor -->
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<!-- Particles canvas -->
+<canvas id="particles"></canvas>
+
+<!-- Toast -->
+<div id="toast">😂 Yeh button kaam nahi karta!</div>
+
+<!-- ═══════════════════ HERO ═══════════════════ -->
+<section id="hero">
+  <p class="hero-badge">✦ Best Friends Day Special ✦</p>
+  <h1>Hey Motu…<br>Are you there? 👀</h1>
+  <p class="hero-sub">A little surprise, just for you 💌</p>
+  <div class="btn-group">
+    <button class="btn" id="btn-yes" onclick="scrollToLetter()">YES, I'm here! 💖</button>
+    <button class="btn" id="btn-no">NO 😏</button>
+  </div>
+</section>
+
+<div class="divider">
+  <span></span><span class="divider-icon">💌</span><span></span>
+</div>
+
+<!-- ═══════════════════ LETTER ═══════════════════ -->
+<section id="letter">
+  <div class="letter-card">
+    <p class="letter-label">✦ A letter from the heart ✦</p>
+    <h2>Dear Motu / Amma Ji 💫</h2>
+    <p id="type-text"></p><span class="cursor-blink" id="type-cursor"></span>
+    <p class="letter-sign" id="sign">— Giraff 🦒</p>
+  </div>
+</section>
+
+<div class="divider">
+  <span></span><span class="divider-icon">📸</span><span></span>
+</div>
+
+<!-- ═══════════════════ GALLERY ═══════════════════ -->
+<section id="gallery">
+  <h2 class="section-title">Our Memories</h2>
+  <p class="section-sub">A few frozen moments of something real</p>
+  <div class="gallery-grid">
+    <div class="photo-card big" onclick="openLightbox('1000240835.jpg')">
+      <img src="1000240835.jpg" alt="Memory 1" loading="lazy">
+    </div>
+    <div class="photo-card" onclick="openLightbox('1000240836.jpg')">
+      <img src="1000240836.jpg" alt="Memory 2" loading="lazy">
+    </div>
+    <div class="photo-card" onclick="openLightbox('1000240837.jpg')">
+      <img src="1000240837.jpg" alt="Memory 3" loading="lazy">
+    </div>
+    <div class="photo-card" onclick="openLightbox('1000240838.jpg')">
+      <img src="1000240838.jpg" alt="Memory 4" loading="lazy">
+    </div>
+    <div class="photo-card big" onclick="openLightbox('1000240840.jpg')">
+      <img src="1000240840.jpg" alt="Memory 5" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ FOOTER ═══════════════════ -->
+<footer>
+  <h2 class="footer-title">Happy Best Friends Day,<br>Motu 🎀</h2>
+  <p class="footer-sub">You're irreplaceable — always.</p>
+  <div class="hearts-row">
+    <span>🌸</span><span>💖</span><span>🌷</span><span>💕</span><span>🌸</span>
+  </div>
+</footer>
+
+<!-- Lightbox -->
+<div id="lightbox" onclick="closeLightbox()">
+  <button id="lightbox-close" onclick="closeLightbox()">✕</button>
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
